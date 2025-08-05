@@ -1,9 +1,7 @@
 <template>
   <div class="background-animation">
-    <!-- 渐变背景 -->
     <div class="gradient-bg"></div>
 
-    <!-- 浮动的泡泡 -->
     <div
       v-for="bubble in bubbles"
       :key="bubble.id"
@@ -18,7 +16,6 @@
       }"
     ></div>
 
-    <!-- 主要内容 -->
     <Teleport to="body">
       <mainContent />
     </Teleport>
